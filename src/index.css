@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+:root{
+
+--SBar1: hsl(174, 77%, 80%);
+--SBG: hsl(174, 86%, 45%);
+--GreyRed: hsl(14, 92%, 95%);
+--LightRed: hsl(15, 100%, 70%);
+--CTAText: hsl(226, 100%, 87%);
+
+
+--White: hsl(0, 0%, 100%);
+--MainBG: hsl(230, 100%, 99%);
+--SBar2: hsl(224, 65%, 95%);
+--Toggle: hsl(223, 50%, 87%);
+--Text: hsl(225, 20%, 60%);
+--CTABG: hsl(227, 35%, 25%);
+
+}
+
+
+html
+{
+font-size:15px;
+font-family: 'Manrope', sans-serif ;
+background-color: var(--MainBG);
+background-image: url('/public/images/bg-pattern.svg');
+background-repeat: no-repeat;
+background-size: cover 50%;
+}
+
+body
+{
+	
+	color:var(--Text);
+	height: 100vh;
+	display: grid;
+	font-size:15px;
+	place-items:center;
+
+
+}
+
+
+main
+{
+	background-color: var(--White);
+	box-shadow: rgba(0,0,0,.2) 0 0 1.5rem;
+	font-size: .9rem;
+	border-radius: .5rem;
+	width: 35rem;
+}
+
+ul
+{
+	list-style: none;
+	padding: 0;
+}
+
+.head
+{
+	text-align: center;
+
+}
+
+h1
+{
+	color: var(--CTABG);
+}
+
+
+
+.toggle
+{
+	background-color: var(--Toggle);
+	width: 2.5rem;
+	height: 1.5rem;
+	padding-left: .2rem;
+	padding-right:.2rem; 
+	align-items: center;
+	display: grid;
+	border-radius: 1.5rem; 
+	margin-left: 1rem;
+	margin-right: 1rem;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.toggleClicked
+{
+	background-color: var(--SBar1);
+	box-shadow: var(--SBar1) 0 0 .5rem;
+}
+
+.bar
+{
+	width: 100%;
+	height: .5rem;
+	border-radius: .5rem;
+	background-color: var(--SBar2);
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+
+}
+
+.barCircle
+{
+	width: 1rem;
+	height: .5rem;
+	padding:.75rem .5rem; 
+	border-radius: 50%;
+	background-color: var(--SBG);
+	box-shadow:var(--SBG) 0 0rem 2rem;
+	cursor: pointer;
+	margin-left:auto;
+	margin-right:0;
+
+}
+
+
+
+
+
+.barGreen
+{
+	background-color: var(--SBar1);
+	height: .5rem;
+	width:50%;
+	display: grid;
+	align-content:  center;
+	border-radius: .5rem 0 0 .5rem;
+}
+
+.circle
+{
+	background-color: var(--White);
+	border-radius: 50%;
+	width: 1.1rem;
+	height: 1.1rem;
+
+}
+
+.circleClicked
+{
+	transition:10s ;
+	margin-left:auto;
+	margin-right:0rem;
+}
+
+
+button
+{
+	background-color: var(--CTABG);
+	font-family: inherit;
+	color: var(--White);
+	font-weight: bold;
+	padding: .6rem 2rem;
+	border:none;
+	border-radius: 2rem;
+	cursor: pointer;
+}
+
+button:hover
+{
+	letter-spacing: .05rem;
+	background-color: var(--CTAText);
+	color:var(--CTABG);
+	transition: .3s;
+}
+
+
+.bottomPart
+{
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-top: var(--SBar2) 2px solid;
+padding: 1rem 2.5rem;
+}
+
+.topPart
+{
+padding:2.5rem;
+
+}
+
+li img
+{
+	margin-right: 1rem;
+}
+
+li
+{
+	margin-top: .5rem;
+}
+
+.togglePart
+{
+	display: flex;
+	justify-content: right;
+}
+
+.discount
+{
+	background-color: var(--GreyRed);
+	color:var(--LightRed);
+	padding-right: .5rem;
+	padding-left: .5rem;
+	border-radius: 1.4rem; 
+	align-items: center;
+	display: grid;
+	margin-left: .5rem;
+
+}
+
+.infoBar
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+
+}
+
+.price
+{
+	order:2;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+
+}
+
+.views
+{
+	order:1;
+	width: 50%;
+	letter-spacing: .1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.bar
+{
+	order:3;
+}
+.count
+{
+	color:var(--CTABG);
+	font-weight: bold;
+	font-size: 2.5rem;
+	margin-right: .5rem;
+}
+
+
+.mobile
+{
+	display:none;
+}
+
+#root
+{
+	display: grid;
+	place-items:center;
+}
+
+/**********************************
+***********************************
+**********************************/
+
+@media(max-width: 600px)
+{
+
+main
+{
+	width: 22rem;
+}
+
+.infoBar
+{
+	display: grid;
+	text-align: center;
+}
+
+.views
+{
+	order:1;
+	width: 100%;
+}
+
+.bar
+{
+	order:2;
+	margin-bottom:2rem;
+}
+.price
+{
+	text-align: center;
+	order:3;
+	width: 100%;
+	justify-content: center;
+	margin-bottom:2rem;
+}
+
+.bottomPart
+{
+	display: grid;
+	justify-content: center;
+	text-align: center;
+}
+
+.mobile
+{
+	display:flex;
+}
+
+.desktop
+{
+
+	display:none;
+}
+
+.togglePart
+{
+	font-size:.7rem;
+	align-items:center;
+
+}
+
+.toggle
+{
+	margin-left:.5rem;
+	margin-right:.5rem;
+	scale:.8;
+}
+
+body
+{
+	display:grid;
+	place-items:center;
+	
+}
+
+
+}
