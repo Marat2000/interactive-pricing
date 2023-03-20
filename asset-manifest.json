@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/interactive-pricing/static/css/main.ac4c7117.css",
-    "main.js": "/interactive-pricing/static/js/main.8a54600f.js",
+    "main.js": "/interactive-pricing/static/js/main.720f416a.js",
     "index.html": "/interactive-pricing/index.html",
     "static/media/bg-pattern.svg": "/interactive-pricing/static/media/bg-pattern.76d3fa7ddce078ad96b5.svg",
     "main.ac4c7117.css.map": "/interactive-pricing/static/css/main.ac4c7117.css.map",
-    "main.8a54600f.js.map": "/interactive-pricing/static/js/main.8a54600f.js.map"
+    "main.720f416a.js.map": "/interactive-pricing/static/js/main.720f416a.js.map"
   },
   "entrypoints": [
     "static/css/main.ac4c7117.css",
-    "static/js/main.8a54600f.js"
+    "static/js/main.720f416a.js"
   ]
 }
