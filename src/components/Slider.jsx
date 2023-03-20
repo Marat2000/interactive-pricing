@@ -41,7 +41,7 @@ const clickChange=()=>
 
 return(
 
- <div  className='bar' ref={ref}  onClick={clickChange} ><div className='barGreen' ref={bar}  style={{ width:`${width+'%'}`}}>
+ <div  className='bar' ref={ref}  onClick={e=>{clickChange(); e.preventDefault() }} ><div className='barGreen' ref={bar}  style={{ width:`${width+'%'}`}}>
   <img   className="barCircle"  onDrag={dragChange}     src="images/icon-slider.svg" />
 </div>
 </div>

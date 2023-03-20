@@ -100,7 +100,8 @@ h1
 	cursor: pointer;
 	margin-top: 2rem;
 	margin-bottom: 4rem;
-
+	outline:none;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .barCircle
