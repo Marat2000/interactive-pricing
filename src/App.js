@@ -3,7 +3,7 @@ import Head from './components/Head'
 import Button from './components/Button'
 import Slider from './components/Slider'
 import Toggle from './components/Toggle'
-import {useState,createContext} from 'react'
+import {useState,createContext,useEffect} from 'react'
 
 export const AppContext=createContext({})
 
@@ -51,9 +51,8 @@ const views=()=>
 }
    
 
-
   return (<>
-<AppContext.Provider value={{ toggle,setToggle , setWidth ,setSlider ,width}}>
+<AppContext.Provider value={{ count,views, toggle,setToggle , slider , setWidth ,setSlider ,width}}>
 
 
 <Head/>
